@@ -1,0 +1,938 @@
+!SESSION 2026-03-04 11:19:20.088 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Spring_Boot
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-04 11:19:23.795
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-04 11:19:26.437
+!MESSAGE Logback config file: C:\Spring_Boot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-03-04 11:19:46.351
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-04 11:58:48.722
+!MESSAGE Unexpected null value present!
+!STACK 0
+java.lang.IllegalStateException: Unexpected null value present!
+	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticTokensClient.requestFullSemanticTokens(SemanticTokensClient.java:45)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.fullReconcile(SemanticHighlightReconcilerStrategy.java:239)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.initialReconcile(SemanticHighlightReconcilerStrategy.java:258)
+	at org.eclipse.ui.internal.genericeditor.CompositeReconcilerStrategy.initialReconcile(CompositeReconcilerStrategy.java:48)
+	at org.eclipse.jface.text.reconciler.Reconciler.initialProcess(Reconciler.java:223)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-04 12:06:46.787
+!MESSAGE Unexpected null value present!
+!STACK 0
+java.lang.IllegalStateException: Unexpected null value present!
+	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticTokensClient.requestFullSemanticTokens(SemanticTokensClient.java:45)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.fullReconcile(SemanticHighlightReconcilerStrategy.java:239)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.initialReconcile(SemanticHighlightReconcilerStrategy.java:258)
+	at org.eclipse.ui.internal.genericeditor.CompositeReconcilerStrategy.initialReconcile(CompositeReconcilerStrategy.java:48)
+	at org.eclipse.jface.text.reconciler.Reconciler.initialProcess(Reconciler.java:223)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.eclipse.ui 4 0 2026-03-04 12:09:28.819
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jface.internal.text.html.BrowserInformationControlInput.getHtml()" because "this.fInput" is null
+	at org.eclipse.jface.internal.text.html.BrowserInformationControl.computeSizeHint(BrowserInformationControl.java:432)
+	at org.eclipse.lsp4e.operations.hover.FocusableBrowserInformationControl.updateBrowserSize(FocusableBrowserInformationControl.java:101)
+	at org.eclipse.lsp4e.operations.hover.FocusableBrowserInformationControl.lambda$1(FocusableBrowserInformationControl.java:105)
+	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4234)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3347)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3722)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-04 13:53:53.757
+!MESSAGE Unexpected null value present!
+!STACK 0
+java.lang.IllegalStateException: Unexpected null value present!
+	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticTokensClient.requestFullSemanticTokens(SemanticTokensClient.java:45)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.fullReconcile(SemanticHighlightReconcilerStrategy.java:239)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.initialReconcile(SemanticHighlightReconcilerStrategy.java:258)
+	at org.eclipse.ui.internal.genericeditor.CompositeReconcilerStrategy.initialReconcile(CompositeReconcilerStrategy.java:48)
+	at org.eclipse.jface.text.reconciler.Reconciler.initialProcess(Reconciler.java:223)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-04 14:04:55.183
+!MESSAGE Unexpected null value present!
+!STACK 0
+java.lang.IllegalStateException: Unexpected null value present!
+	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticTokensClient.requestFullSemanticTokens(SemanticTokensClient.java:45)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.fullReconcile(SemanticHighlightReconcilerStrategy.java:239)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.initialReconcile(SemanticHighlightReconcilerStrategy.java:258)
+	at org.eclipse.ui.internal.genericeditor.CompositeReconcilerStrategy.initialReconcile(CompositeReconcilerStrategy.java:48)
+	at org.eclipse.jface.text.reconciler.Reconciler.initialProcess(Reconciler.java:223)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+!SESSION 2026-03-06 18:56:43.828 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-06 18:58:08.743
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-06 18:58:14.991
+!MESSAGE Logback config file: C:\Spring_Boot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-03-06 18:58:46.142
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.jobs 4 2 2026-03-06 18:59:33.886
+!MESSAGE An internal error occurred during: "https://www.eclipse.org/setups/setups.zip".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.osgi.framework.BundleContext.createFilter(String)" because "context" is null
+	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:190)
+	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:253)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient5.Activator.getLogService(Activator.java:202)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient5.Activator.log(Activator.java:213)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.hardClose(HttpClientRetrieveFileTransfer.java:200)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer$1.performFileTransfer(AbstractRetrieveFileTransfer.java:199)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 2 2 2026-03-06 18:59:34.512
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.oomph.internal.ui.EarlyStart$1 RUNNING
+	 at java.base/jdk.internal.misc.Unsafe.park(Native Method)
+	 at java.base/java.util.concurrent.locks.LockSupport.park(LockSupport.java:221)
+	 at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(AbstractQueuedSynchronizer.java:754)
+	 at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1099)
+	 at java.base/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:230)
+	 at org.eclipse.oomph.setup.internal.core.util.ECFURIHandlerImpl$FileTransferListener.await(ECFURIHandlerImpl.java:1034)
+	 at org.eclipse.oomph.setup.internal.core.util.ECFURIHandlerImpl$ConnectionHandler.process(ECFURIHandlerImpl.java:1623)
+	 at org.eclipse.oomph.setup.internal.core.util.ECFURIHandlerImpl.createInputStream(ECFURIHandlerImpl.java:320)
+	 at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream(ExtensibleURIConverterImpl.java:358)
+	 at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1314)
+	 at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.handleArchiveRedirection(SetupCoreUtil.java:708)
+	 at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.configureResourceSet(SetupCoreUtil.java:486)
+	 at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.configureResourceSet(SetupCoreUtil.java:268)
+	 at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.createResourceSet(SetupCoreUtil.java:262)
+	 at org.eclipse.oomph.setup.ui.recorder.RecorderManager.<clinit>(RecorderManager.java:114)
+	 at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:229)
+	 at org.eclipse.oomph.setup.ui.EarlyStartup.earlyStartup(EarlyStartup.java:23)
+	 at org.eclipse.oomph.internal.ui.EarlyStart.run(EarlyStart.java:119)
+	 at org.eclipse.oomph.internal.ui.EarlyStart$1.run(EarlyStart.java:98)
+	 at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2026-03-10 15:11:48.259 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Spring_Boot
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-10 15:12:17.185
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-10 15:12:19.158
+!MESSAGE Logback config file: C:\Spring_Boot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-03-10 15:12:30.460
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2026-03-11 10:32:34.822 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Spring_Boot
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-11 10:32:38.742
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-11 10:32:42.640
+!MESSAGE Logback config file: C:\Spring_Boot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-03-11 10:33:01.458
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2026-03-11 14:58:41.692 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Spring_Boot
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-11 14:58:44.435
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-11 14:58:46.293
+!MESSAGE Logback config file: C:\Spring_Boot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-03-11 14:58:58.516
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2026-03-11 17:28:02.922 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-11 17:29:22.272
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-11 17:29:27.305
+!MESSAGE Logback config file: C:\Spring_Boot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-03-11 17:29:55.084
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2026-03-12 14:16:28.502 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-12 14:18:16.894
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-12 14:18:22.236
+!MESSAGE Logback config file: C:\Spring_Boot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-03-12 14:18:57.959
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2026-03-16 11:04:29.216 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Spring_Boot
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-16 11:04:31.145
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-16 11:04:32.682
+!MESSAGE Logback config file: C:\Spring_Boot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-03-16 11:04:43.867
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2026-03-16 21:37:05.022 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-16 21:39:04.550
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-16 21:39:12.129
+!MESSAGE Logback config file: C:\Spring_Boot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-03-16 21:39:50.651
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2026-03-16 21:45:44.984 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-16 21:45:49.880
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-16 21:45:53.038
+!MESSAGE Logback config file: C:\Spring_Boot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.core.resources 4 1 2026-03-16 21:46:10.275
+!MESSAGE Core exception while retrieving the content description
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/PaymentService/src/main/java/com/banking/PaymentService/controller/Controller_Demo.java)[368]: java.io.FileNotFoundException: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\src\main\java\com\banking\PaymentService\controller\Controller_Demo.java (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:521)
+	at org.eclipse.core.internal.resources.ContentDescriptionManager$LazyFileInputStream.ensureOpened(ContentDescriptionManager.java:194)
+	at org.eclipse.core.internal.resources.ContentDescriptionManager$LazyFileInputStream.read(ContentDescriptionManager.java:211)
+	at java.base/java.io.InputStream.read(InputStream.java:220)
+	at org.eclipse.core.internal.content.LazyInputStream.loadBlock(LazyInputStream.java:147)
+	at org.eclipse.core.internal.content.LazyInputStream.ensureAvailable(LazyInputStream.java:86)
+	at org.eclipse.core.internal.content.LazyInputStream.read(LazyInputStream.java:170)
+	at org.eclipse.core.internal.content.Util.getByteOrderMark(Util.java:122)
+	at org.eclipse.core.internal.content.TextContentDescriber.describe(TextContentDescriber.java:46)
+	at org.eclipse.core.internal.content.ContentType.describe(ContentType.java:182)
+	at org.eclipse.core.internal.content.ContentType.internalGetDescriptionFor(ContentType.java:472)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.getDescriptionFor(ContentTypeCatalog.java:441)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.getDescriptionFor(ContentTypeCatalog.java:445)
+	at org.eclipse.core.internal.content.ContentTypeMatcher.getDescriptionFor(ContentTypeMatcher.java:82)
+	at org.eclipse.core.internal.resources.ContentDescriptionManager.readDescription(ContentDescriptionManager.java:515)
+	at org.eclipse.core.internal.resources.ContentDescriptionManager.getDescriptionFor(ContentDescriptionManager.java:399)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:337)
+	at org.eclipse.core.internal.propertytester.FilePropertyTester.testContentType(FilePropertyTester.java:104)
+	at org.eclipse.core.internal.propertytester.FilePropertyTester.test(FilePropertyTester.java:56)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:121)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.expressions.OrExpression.evaluate(OrExpression.java:26)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.AndExpression.evaluate(AndExpression.java:36)
+	at org.eclipse.ui.internal.texteditor.codemining.CodeMiningProviderDescriptor.matches(CodeMiningProviderDescriptor.java:189)
+	at org.eclipse.ui.internal.texteditor.codemining.CodeMiningProviderRegistry.getProviders(CodeMiningProviderRegistry.java:110)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.installCodeMiningProviders(AbstractTextEditor.java:4031)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.installCodeMiningProviders(JavaEditor.java:4279)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.initializeSourceViewer(AbstractTextEditor.java:4021)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.createPartControl(AbstractTextEditor.java:3482)
+	at org.eclipse.ui.texteditor.StatusTextEditor.createPartControl(StatusTextEditor.java:64)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.createPartControl(AbstractDecoratedTextEditor.java:473)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.createPartControl(JavaEditor.java:3102)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.createPartControl(CompilationUnitEditor.java:1521)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:160)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:96)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:367)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:939)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:312)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:90)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.ui.internal.WorkbenchContributionFactory.create(WorkbenchContributionFactory.java:46)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:134)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1389)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:114)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:543)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:527)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:48)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:79)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:114)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:61)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1079)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2026-03-16 21:46:10.301
+!MESSAGE File not found: /PaymentService/src/main/java/com/banking/PaymentService/controller/Controller_Demo.java.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\src\main\java\com\banking\PaymentService\controller\Controller_Demo.java (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:521)
+	at org.eclipse.core.internal.resources.ContentDescriptionManager$LazyFileInputStream.ensureOpened(ContentDescriptionManager.java:194)
+	at org.eclipse.core.internal.resources.ContentDescriptionManager$LazyFileInputStream.read(ContentDescriptionManager.java:211)
+	at java.base/java.io.InputStream.read(InputStream.java:220)
+	at org.eclipse.core.internal.content.LazyInputStream.loadBlock(LazyInputStream.java:147)
+	at org.eclipse.core.internal.content.LazyInputStream.ensureAvailable(LazyInputStream.java:86)
+	at org.eclipse.core.internal.content.LazyInputStream.read(LazyInputStream.java:170)
+	at org.eclipse.core.internal.content.Util.getByteOrderMark(Util.java:122)
+	at org.eclipse.core.internal.content.TextContentDescriber.describe(TextContentDescriber.java:46)
+	at org.eclipse.core.internal.content.ContentType.describe(ContentType.java:182)
+	at org.eclipse.core.internal.content.ContentType.internalGetDescriptionFor(ContentType.java:472)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.getDescriptionFor(ContentTypeCatalog.java:441)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.getDescriptionFor(ContentTypeCatalog.java:445)
+	at org.eclipse.core.internal.content.ContentTypeMatcher.getDescriptionFor(ContentTypeMatcher.java:82)
+	at org.eclipse.core.internal.resources.ContentDescriptionManager.readDescription(ContentDescriptionManager.java:515)
+	at org.eclipse.core.internal.resources.ContentDescriptionManager.getDescriptionFor(ContentDescriptionManager.java:399)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:337)
+	at org.eclipse.core.internal.propertytester.FilePropertyTester.testContentType(FilePropertyTester.java:104)
+	at org.eclipse.core.internal.propertytester.FilePropertyTester.test(FilePropertyTester.java:56)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:121)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.expressions.OrExpression.evaluate(OrExpression.java:26)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.AndExpression.evaluate(AndExpression.java:36)
+	at org.eclipse.ui.internal.texteditor.codemining.CodeMiningProviderDescriptor.matches(CodeMiningProviderDescriptor.java:189)
+	at org.eclipse.ui.internal.texteditor.codemining.CodeMiningProviderRegistry.getProviders(CodeMiningProviderRegistry.java:110)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.installCodeMiningProviders(AbstractTextEditor.java:4031)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.installCodeMiningProviders(JavaEditor.java:4279)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.initializeSourceViewer(AbstractTextEditor.java:4021)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.createPartControl(AbstractTextEditor.java:3482)
+	at org.eclipse.ui.texteditor.StatusTextEditor.createPartControl(StatusTextEditor.java:64)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.createPartControl(AbstractDecoratedTextEditor.java:473)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.createPartControl(JavaEditor.java:3102)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.createPartControl(CompilationUnitEditor.java:1521)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:160)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:96)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:367)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:939)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:312)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:90)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.ui.internal.WorkbenchContributionFactory.create(WorkbenchContributionFactory.java:46)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:134)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1389)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:114)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:543)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:527)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:48)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:79)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:114)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:61)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1079)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-03-16 21:46:16.138
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2026-03-16 21:46:18.812
+!MESSAGE File not found: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\pom.xml.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/PaymentService/pom.xml)[368]: org.eclipse.core.runtime.CoreException: File not found: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\pom.xml.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:32)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.handleReadIOException(LocalFile.java:542)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:523)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:882)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:352)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:342)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:589)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\pom.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:521)
+	... 27 more
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2026-03-16 21:46:18.813
+!MESSAGE File not found: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\pom.xml.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\pom.xml.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:32)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.handleReadIOException(LocalFile.java:542)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:523)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:882)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:352)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:342)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:589)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\pom.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:521)
+	... 27 more
+!SUBENTRY 2 org.eclipse.core.filesystem 4 269 2026-03-16 21:46:18.814
+!MESSAGE File not found: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\pom.xml.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\pom.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:521)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:882)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:352)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:342)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:589)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2026-03-16 21:48:10.893 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-16 21:48:16.500
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-16 21:48:19.499
+!MESSAGE Logback config file: C:\Spring_Boot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-03-16 21:48:20.389
+!MESSAGE The workspace will exit with unsaved changes in this session.
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-03-16 21:48:39.328
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2026-03-16 21:52:07.252
+!MESSAGE File not found: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\pom.xml.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/PaymentService/pom.xml)[368]: org.eclipse.core.runtime.CoreException: File not found: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\pom.xml.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:32)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.handleReadIOException(LocalFile.java:542)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:523)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:882)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:352)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:342)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:589)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\pom.xml (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:521)
+	... 27 more
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2026-03-16 21:52:07.259
+!MESSAGE File not found: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\pom.xml.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\pom.xml.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:32)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.handleReadIOException(LocalFile.java:542)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:523)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:882)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:352)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:342)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:589)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\pom.xml (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:521)
+	... 27 more
+!SUBENTRY 2 org.eclipse.core.filesystem 4 269 2026-03-16 21:52:07.259
+!MESSAGE File not found: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\pom.xml.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\hp\Downloads\PaymentService (2)\PaymentService\pom.xml (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:521)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:882)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:352)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:342)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:589)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 2 2 2026-03-16 21:54:18.531
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2026-03-16 21:54:18.531
+!MESSAGE The project description file (.project) for 'PaymentService' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.ui.ide 4 4 2026-03-16 22:00:20.729
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2026-03-16 22:00:20.731
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2026-03-16 22:00:20.731
+!MESSAGE The project description file (.project) for 'PaymentService' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SESSION 2026-03-16 22:00:23.410 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-16 22:00:27.214
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-16 22:00:29.846
+!MESSAGE Logback config file: C:\Spring_Boot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-03-16 22:00:40.740
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2026-03-16 22:09:11.508 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-16 22:09:16.750
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-16 22:09:20.251
+!MESSAGE Logback config file: C:\Spring_Boot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-03-16 22:09:32.537
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
