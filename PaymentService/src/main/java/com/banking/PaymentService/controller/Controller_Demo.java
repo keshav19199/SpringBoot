@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/demo")
 public class Controller_Demo {
 	
-	@GetMapping("/a_name")
+	@GetMapping("/name")
 	public String car()
 	{
-		return "siera";
+		return "sierra";
 	}
 
 }
