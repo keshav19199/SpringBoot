@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Spring_Boot\PaymentService"/>
 			<item value="C:\Users\hp\Downloads\PaymentService (2)\PaymentService"/>
 		</list>
 		<list key="projectNameTemplate">
