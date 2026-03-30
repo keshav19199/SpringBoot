@@ -1,7 +1,5 @@
 package com.JPA.connectivity.Controller;
 
-
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,6 +40,5 @@ public class BookController {
 		repo.deleteById(id);
 		return "deleted!..";
 	}
-	
 	
 }
