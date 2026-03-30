@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,6 +29,13 @@ public class TeacherController {
 	public List<Teacher> getall()
 	{
 		return service.getAll();
+	}
+	
+	
+	@GetMapping("/get-by-name/{name}")
+	public List<Teacher> getName(@PathVariable (value="name")  String name)
+	{
+		return service.getbyname(name);
 	}
 
 }
