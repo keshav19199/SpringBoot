@@ -27,4 +27,15 @@ public class Teacher_service {
 	
 	}
 	
+	
+	public List<Teacher> getbyname(String name)
+	{
+		return repo.getByName(name);
+	}
+	
+	
+	public int updatemailbyid(int id, String email)
+	{
+		return repo.updatemail(id,email);
+	}
 }
