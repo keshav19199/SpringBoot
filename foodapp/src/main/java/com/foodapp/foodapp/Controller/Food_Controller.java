@@ -24,17 +24,17 @@ public class Food_Controller {
 	@Autowired
 	private Orders_Service orderService;
 
-	@PostMapping("/add-user")
+	@PostMapping("/user")
 	public User saveUser(@Valid @RequestBody User user) {
 	    return userService.saveUser(user);
 	}
 
-	@PostMapping("/add-orders")
+	@PostMapping("order")
 	public Orders placeOrder(@RequestBody Orders order) {
 	    return orderService.placeOrder(order);
 	}
 
-	@GetMapping("/get-orders")
+	@GetMapping("orders")
 	public List<Orders> getAllOrders() {
 	    return orderService.getAllOrders();
 	}
