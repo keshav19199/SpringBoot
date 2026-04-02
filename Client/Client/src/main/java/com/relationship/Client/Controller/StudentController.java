@@ -1,4 +1,4 @@
-package com.relationship.Client.Controller;
+	package com.relationship.Client.Controller;
 
 import java.util.List;
 
@@ -23,7 +23,6 @@ public class StudentController {
 		repo.save(s);
 		return s.getName()+" added successfully";
 	}
-	
 	
 	@GetMapping("/geted-all")
 	public List<Student> get()
