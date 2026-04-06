@@ -18,16 +18,10 @@ public class Teacher {
 	String degree;
 	String mobile;
 	
-	@OneToMany(mappedBy="t")
-	private List<Student> s;
 	
 	
-	public List<Student> getS() {
-		return s;
-	}
-	public void setS(List<Student> s) {
-		this.s = s;
-	}
+	
+	
 	public int getId() {
 		return id;
 	}
@@ -52,6 +46,16 @@ public class Teacher {
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
+	
+	public List<Student> getStudent() {
+		return student;
+	}
+	public void setStudent(List<Student> student) {
+		this.student = student;
+	}
+
+	@OneToMany(mappedBy = "t")
+	 private List<Student> student;
 
 	
 

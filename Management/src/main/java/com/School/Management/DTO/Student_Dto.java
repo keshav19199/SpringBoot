@@ -4,28 +4,33 @@ import com.School.Management.Entity.Student;
 
 public class Student_Dto {
 	
-	int id;
+	
 	String name;
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
+	String age;
+	
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	public static Student_Dto convert(Student s)
-	{
-		Student_Dto sDto=new Student_Dto();
-		sDto.setId(s.getId());
-		sDto.setName(s.getName());
-		
-		return sDto;
+	public String getAge() {
+		return age;
 	}
-
+	public void setAge(String age) {
+		this.age = age;
+	}
+	
+	public static Student_Dto convert(Student stud)
+	{
+		Student_Dto dto=new Student_Dto();
+		dto.setName(stud.getName());
+		dto.setAge(stud.getAge());
+		
+		return dto;
+		
+	}
+	
+	
+	
 }

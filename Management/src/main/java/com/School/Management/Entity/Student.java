@@ -15,6 +15,7 @@ public class Student {
 	int id;
 	String name;
 	String age;
+	
 	public int getId() {
 		return id;
 	}
@@ -59,7 +60,6 @@ public class Student {
 	
 	@JoinColumn
 	@ManyToOne
-	
 	private Teacher t;
 	
 	
