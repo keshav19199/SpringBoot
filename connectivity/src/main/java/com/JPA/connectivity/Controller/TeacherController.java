@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.JPA.connectivity.DTO.TeacherDTO;
 import com.JPA.connectivity.Entity.Teacher;
 import com.JPA.connectivity.Service.Teacher_service;
 
@@ -27,13 +28,13 @@ public class TeacherController {
 	}
 	
 	@GetMapping("/get-teacher")
-	public List<Teacher> getall()
+	public List<TeacherDTO> getall()
 	{
-		return service.getAll();
+		return service.getAll1();
 	}
 	
 	
-	@GetMapping("/get-by-nameAnimal/{name}")
+	@GetMapping("/get-by-nameteacher/{name}")
 	public List<Teacher> getName(@PathVariable (value="name")  String name)
 	{
 		return service.getbyname(name);

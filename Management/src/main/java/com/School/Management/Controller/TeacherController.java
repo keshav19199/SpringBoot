@@ -3,9 +3,12 @@ package com.School.Management.Controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.School.Management.DTO.Teacher_Dto;
@@ -29,5 +32,13 @@ public class TeacherController {
 	{
 		return service.getAllTeacher();
 	}
+	
+//	@GetMapping("/get-teacher-page")
+//	 public Page<Teacher> getPage()	
+//	{
+//		 return service.getTeacher();	
+//		 
+//	}
+
 
 }

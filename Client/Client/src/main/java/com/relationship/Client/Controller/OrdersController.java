@@ -20,8 +20,8 @@ public class OrdersController {
 	@PostMapping("/add-orders")
 	public String addOrders(@RequestBody Orders o)
 	{
-		service.addOrders(o);
-		return addOrders(o);
+		return service.addOrders(o);
+		//return addOrders(o);
 	}
 	
 	@GetMapping("/get-orders")

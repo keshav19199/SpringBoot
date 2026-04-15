@@ -4,8 +4,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
-
+import org.springframework.web.bind.annotation.GetMapping;
 
 import com.School.Management.DTO.Teacher_Dto;
 import com.School.Management.Entity.Teacher;
@@ -28,5 +30,17 @@ public class Teacher_service {
 		return repo.findAll().stream().map(Teacher_Dto::converter).collect(Collectors.toList());
 		
 	}
+	
+	
+//	public Page<Teacher> getTeacher()
+//	{
+//		
+//		Page<Teacher> page=repo.findAll(PageRequest.of(0, 4));
+//		
+//		return page;
+//	}
+	
+	
+	
 
 }

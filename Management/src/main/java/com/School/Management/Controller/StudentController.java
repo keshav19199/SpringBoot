@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.School.Management.DTO.Student_Dto;
 import com.School.Management.Entity.Student;
 import com.School.Management.Service.Student_service;
+import com.School.Management.exception.InvalidMobileNoException;
 
 @RestController
 public class StudentController {
@@ -21,7 +23,7 @@ public class StudentController {
 	public Student_service service;
 	
 	@PostMapping("/add-student")
-	public String addAstudent(@RequestBody Student s)
+	public String addAstudent(@RequestBody Student s) throws InvalidMobileNoException
 	{
 		return service.addStudent(s);
 	}
@@ -41,4 +43,13 @@ public class StudentController {
 		service.deleteStudent(id);
 		return "Student delete";
 	}
+	
+	
+	// exception handler is a annotation to bind that particular class to find method.
+	@ExceptionHandler(value=InvalidMobileNoException.class)
+	public String handleMobileException( InvalidMobileNoException kk)
+	{
+		return kk.getMessage();
+	}
+	
 }

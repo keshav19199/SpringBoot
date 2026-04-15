@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 
 @Entity
 public class Payment {
@@ -14,6 +15,16 @@ public class Payment {
 	int pid;
 	String Transaction_no;
 	String status;
+	
+	@OneToOne(mappedBy="payment")
+	private Ticket ticket;
+	
+	public Ticket getTicket() {
+		return ticket;
+	}
+	public void setTicket(Ticket ticket) {
+		this.ticket = ticket;
+	}
 	public int getPid() {
 		return pid;
 	}

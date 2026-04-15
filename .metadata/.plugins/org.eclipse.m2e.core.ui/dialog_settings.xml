@@ -2,6 +2,16 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Spring_Boot\Airplane-ticket-management"/>
+			<item value="C:\Spring_Boot\exception-handling"/>
+			<item value="C:\Spring_Boot\Management"/>
+			<item value="C:\Spring_Boot\hospital-management"/>
+			<item value="C:\Spring_Boot\foodapp"/>
+			<item value="C:\Spring_Boot\Client\Client"/>
+			<item value="C:\Spring_Boot\ptservice\ptservice"/>
+			<item value="C:\Users\hp\Downloads\ptservice\ptservice"/>
+			<item value="C:\Users\hp\Downloads\paymentservice\paymentservice"/>
+			<item value="C:\Spring_Boot\connectivity"/>
 			<item value="C:\Spring_Boot\demo2\demo2"/>
 			<item value="C:\Spring_Boot\PaymentService"/>
 			<item value="C:\Users\hp\Downloads\PaymentService (2)\PaymentService"/>

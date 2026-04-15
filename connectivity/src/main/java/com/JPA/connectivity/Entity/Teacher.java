@@ -1,5 +1,7 @@
 package com.JPA.connectivity.Entity;
 
+import org.hibernate.validator.constraints.Length;
+
 import jakarta.annotation.Generated;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -14,6 +16,7 @@ public class Teacher {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	int id;
 	
+	//@Length(min=3,max=5, message="invalid name, nit name de re mulaa")
 	String name;
 	
 	@Column(unique=true)

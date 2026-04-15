@@ -6,6 +6,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 
 @Entity
 public class Ticket {
@@ -20,8 +22,31 @@ public class Ticket {
 	
 	@ManyToOne
 	@JoinColumn(name="aid")
-	
 	private Airplane airplane;
+	
+	@ManyToOne
+	@JoinColumn(name="cid")
+	private Customer customer;
+	
+	@OneToOne
+	@JoinColumn(name="pid")
+	private Payment payment;
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+
+	public Payment getPayment() {
+		return payment;
+	}
+
+	public void setPayment(Payment payment) {
+		this.payment = payment;
+	}
 
 	public int getTid() {
 		return tid;

@@ -1,9 +1,12 @@
 package com.ticket.Airplane_ticket_management.Entity;
 
+import java.util.List;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 
 @Entity
 public class Customer {
@@ -16,6 +19,9 @@ public class Customer {
 	String cemail;
 	String mobile;
 	String gender;
+	
+	@OneToMany(mappedBy="customer")
+	private List<Ticket> ticket;
 	
 	
 	public int getCid() {

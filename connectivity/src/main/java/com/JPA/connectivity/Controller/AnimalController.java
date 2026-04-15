@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.JPA.connectivity.Entity.Animal;
-import com.JPA.connectivity.Entity.Teacher;
 import com.JPA.connectivity.Service.Animal_service;
 
 @RestController
