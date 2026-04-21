@@ -1,6 +1,9 @@
 package com.School.Management.Teacher_Repo;
 
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+import java.util.List;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +34,21 @@ public class Teacher_Repo_test {
 		Teacher t2=repo.save(t);
 
 		assertNotNull(t2);
+	}
+	
+	@Test
+	public void getByName()
+	{
+		Teacher t=new Teacher();
+		t.setDegree("B.tech");
+		t.setMobile("87786665");
+		t.setName("MAARI");
+		
+		repo.save(t);
+		
+		List<Teacher> t2=repo.getByName("MAARI");
+		
+		assertNotEquals(0, t2.size());
 	}
 	
 }

@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.relationship.Client.Service.Doctor_service"/>
-    <fullyQualifiedTypeName name="com.relationship.Client.Entity.Doctor"/>
-    <fullyQualifiedTypeName name="com.hospital.hospital_management.repository.Doctor_Repository"/>
-    <fullyQualifiedTypeName name="com.hospital.hospital_management.repository.Patient_Repository"/>
-    <fullyQualifiedTypeName name="com.hospital.hospital_management.service.Patient_service"/>
-    <fullyQualifiedTypeName name="com.hospital.hospital_management.entity.Patient"/>
-    <fullyQualifiedTypeName name="com.hospital.hospital_management.controller.Doctor_service"/>
-    <fullyQualifiedTypeName name="com.hospital.hospital_management.entity.Doctor"/>
-    <fullyQualifiedTypeName name="jakarta.annotation.Generated"/>
-    <fullyQualifiedTypeName name="com.School.Management.Repository.Teacher_Repository"/>
     <fullyQualifiedTypeName name="com.School.Management.Repository.Student_repository"/>
     <fullyQualifiedTypeName name="com.School.Management.Service.Student_service"/>
     <fullyQualifiedTypeName name="com.School.Management.Service.Teacher_service"/>
     <fullyQualifiedTypeName name="com.School.Management.DTO.Teacher_Dto"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
-    <fullyQualifiedTypeName name="com.School.Management.Entity.Teacher"/>
     <fullyQualifiedTypeName name="com.School.Management.Entity.Student"/>
     <fullyQualifiedTypeName name="com.School.Management.DTO.Student_Dto"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
@@ -53,11 +42,22 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ExceptionHandler"/>
     <fullyQualifiedTypeName name="org.hibernate.validator.constraints.Length"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="com.ME.exception_handling.Service.Department_service"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
     <fullyQualifiedTypeName name="com.ME.exception_handling.Entity.Department"/>
+    <fullyQualifiedTypeName name="org.springframework.data.domain.PageRequest"/>
+    <fullyQualifiedTypeName name="org.springframework.data.domain.Page"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.School.Management.Teacher_Repo.Teacher_Repo_test"/>
+    <fullyQualifiedTypeName name="com.School.Management.Repository.Teacher_Repository"/>
+    <fullyQualifiedTypeName name="jakarta.transaction.Transactional"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.AutoConfiguration"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.jdbc.test.autoconfigure.AutoConfigureTestDatabase"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.School.Management.Entity.Teacher"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
 </qualifiedTypeNameHistroy>
