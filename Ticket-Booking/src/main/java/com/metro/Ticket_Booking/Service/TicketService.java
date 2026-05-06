@@ -9,5 +9,7 @@ public interface TicketService {
 	Ticket bookTicket(Ticket ticket);
 	List<Ticket> getAllTicket();
 	List<Ticket> getTicketByUser(Long userId);
+	
+	Ticket updateTicket(int id, Ticket ticket);
 
 }

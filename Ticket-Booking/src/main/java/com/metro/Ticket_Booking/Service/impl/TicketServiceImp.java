@@ -29,6 +29,14 @@ public class TicketServiceImp implements TicketService{
 	public List<Ticket> getTicketByUser(Long userId) {
 		return repo.findAll();
 	}
+
+	@Override
+	public Ticket updateTicket(int id, Ticket ticket) {
+		
+		Ticket exist=repo.findById((long) id).orElseThrow(()-> new RuntimeException("Ticket Not Found"));
+		
+		return repo.save(exist);
+	}
 	
 	
 
