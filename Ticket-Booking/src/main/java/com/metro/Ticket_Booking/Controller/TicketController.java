@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -34,6 +35,12 @@ public class TicketController {
 	public List<Ticket> getUserTicket(@PathVariable long userId)
 	{
 		return service.getTicketByUser(userId);
+	}
+	
+	@PutMapping("/update-ticket/{id}")
+	public Ticket updateTicket(@PathVariable int id, @RequestBody Ticket ticket)
+	{
+		return service.updateTicket(id, ticket);
 	}
 
 }
