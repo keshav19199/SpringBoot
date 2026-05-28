@@ -5,5 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.metro.Ticket_Booking.Entity.User;
 
 public interface UserRepo extends JpaRepository<User,Long> {
+	
+	User findByEmail(String mail);
 
 }

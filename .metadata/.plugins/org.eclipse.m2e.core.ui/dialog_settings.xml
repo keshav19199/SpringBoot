@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Spring_Boot\Ticket-Booking"/>
+			<item value="C:\Spring_Boot\RBA"/>
 			<item value="C:\Spring_Boot\Airplane-ticket-management"/>
 			<item value="C:\Spring_Boot\exception-handling"/>
 			<item value="C:\Spring_Boot\Management"/>

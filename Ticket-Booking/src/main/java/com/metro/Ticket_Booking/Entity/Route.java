@@ -18,6 +18,8 @@ public class Route {
 	private String toStation;
 	private double distance;
 	private double fare;
+	
+	
 	public int getId() {
 		return id;
 	}
