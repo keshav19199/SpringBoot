@@ -3,6 +3,7 @@ package com.JPA.connectivity.Controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,6 +15,7 @@ import com.JPA.connectivity.DTO.TeacherDTO;
 import com.JPA.connectivity.Entity.Teacher;
 import com.JPA.connectivity.Service.Teacher_service;
 
+@CrossOrigin(origins = "*")
 @RestController
 public class TeacherController {
 	
