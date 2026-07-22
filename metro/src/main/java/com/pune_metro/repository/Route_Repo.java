@@ -3,9 +3,9 @@ package com.pune_metro.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.pune_metro.entity.User;
+import com.pune_metro.entity.Route;
 
 @Repository
-public interface User_Repo extends JpaRepository<User, Integer>{
+public interface Route_Repo extends JpaRepository<Route, Integer>{
 
 }

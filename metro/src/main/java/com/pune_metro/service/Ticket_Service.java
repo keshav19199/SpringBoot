@@ -24,4 +24,16 @@ public class Ticket_Service {
 	{
 		return repo.findAll();
 	}
+	
+	public String updateTicket(Ticket t)
+	{
+		return repo.save(t)+" updated successfully..!";
+	}
+	
+	public String deleteTicke(int i)
+	{
+		repo.deleteById(i);
+		return " delete successfully..!";
+	}
+	
 }

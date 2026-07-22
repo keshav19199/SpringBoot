@@ -1,21 +1,24 @@
 package com.pune_metro.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Ticket {
 
 	@Id
-	private String id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
 	private double price;
 	
 	
 	
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public double getPrice() {
@@ -24,6 +27,5 @@ public class Ticket {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	
 	
 }

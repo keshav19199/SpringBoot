@@ -24,5 +24,17 @@ public class User_Service {
 	{
 		return repo.findAll();
 	}
+	
+	public String updateUser(User u)
+	{
+		repo.save(u);
+		return u.getName()+" updated Successfull..!!";
+	}
+	
+	public String deleteUser(Integer id)
+	{
+		repo.deleteById(id);
+		return " Deleted SuccessFully..!";
+	}
 
 }

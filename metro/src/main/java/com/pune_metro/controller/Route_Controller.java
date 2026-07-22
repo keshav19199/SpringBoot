@@ -12,39 +12,38 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.pune_metro.entity.Ticket;
-import com.pune_metro.service.Ticket_Service;
+import com.pune_metro.entity.Route;
+import com.pune_metro.service.Route_service;
 
 @RestController
-@RequestMapping("/ticket")
-public class Ticket_Controller {
+@RequestMapping("/route")
+public class Route_Controller {
 	
 	@Autowired
-	public Ticket_Service service;
+	public Route_service service;
 	
-	@PostMapping("/add-ticket")
-	public String addTicket(@RequestBody Ticket t)
+	@PostMapping("/add-route")
+	public String addRoute(@RequestBody Route r)
 	{
-		return service.addTicket(t);
+		return service.addRoute(r);
 	}
 	
-	@GetMapping("/get-ticket")
-	public List<Ticket> getAll()
+	@GetMapping("/get-route")
+	public List<Route> getAll()
 	{
 		return service.getAll();
 	}
 	
-	@PutMapping("/update-ticket")
-	public String updateTicket(@RequestBody Ticket t)
+	@PutMapping("/update-route")
+	public String updateRoute(@RequestBody Route r)
 	{
-		return service.updateTicket(t);
+		return service.updateRoute(r);
 	}
 	
-	@DeleteMapping("/delete-ticket/{i}")
-	public String deleteTicket(@PathVariable int i)
+	@DeleteMapping("/delete-route/{i}")
+	public String deleteRoute(@PathVariable int i)
 	{
-		return service.deleteTicke(i);
+		return service.deleteRoute(i);
 	}
-	
 
 }
