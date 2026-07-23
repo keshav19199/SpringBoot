@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Ticket {
@@ -13,7 +15,25 @@ public class Ticket {
 	private int id;
 	private double price;
 	
+	public User getU() {
+		return u;
+	}
+	public void setU(User u) {
+		this.u = u;
+	}
+	public Route getR() {
+		return r;
+	}
+	public void setR(Route r) {
+		this.r = r;
+	}
+	@ManyToOne
+	@JoinColumn(name="user_id")
+	private User u;
 	
+	@ManyToOne
+	@JoinColumn(name="route_id")
+	private Route r;
 	
 	public int getId() {
 		return id;
